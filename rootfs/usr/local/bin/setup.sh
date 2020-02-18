@@ -100,6 +100,7 @@ _envtpl /etc/postfix/sql/virtual-mailbox-domains.cf
 _envtpl /etc/postfix/sql/virtual-mailbox-maps.cf
 _envtpl /etc/postfix/sql/virtual-alias-domain-mailbox-maps.cf
 _envtpl /etc/postfix/sql/virtual-alias-maps.cf
+_envtpl /etc/postfix/sql/virtual-alias-regex-maps.cf
 _envtpl /etc/postfix/sql/virtual-alias-domain-maps.cf
 _envtpl /etc/postfix/sql/virtual-alias-domain-catchall-maps.cf
 

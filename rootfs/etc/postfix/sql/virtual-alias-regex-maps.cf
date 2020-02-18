@@ -1,0 +1,10 @@
+hosts    = {{ .DBHOST }}:{{ .DBPORT }}
+user     = {{ .DBUSER }}
+password = {{ .DBPASS }}
+dbname   = {{ .DBNAME }}
+
+{{ if eq .DBDRIVER "mysql" }}
+option_group = client
+{{ end }}
+
+query = SELECT goto FROM alias WHERE '%s' REGEXP CONCAT('^',address,'$') AND SUBSTRING(address,1,1) != '@' AND active = '1' AND x_regexp = '1'

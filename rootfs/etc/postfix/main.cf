@@ -113,6 +113,7 @@ virtual_mailbox_domains = proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-mailbox
 virtual_mailbox_maps    = proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-mailbox-maps.cf,
                           proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-alias-domain-mailbox-maps.cf
 virtual_alias_maps      = proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-alias-maps.cf,
+                          proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-alias-regexp-maps.cf,
                           proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-alias-domain-maps.cf,
                           proxy:{{ .DBDRIVER }}:/etc/postfix/sql/virtual-alias-domain-catchall-maps.cf,
                           hash:/etc/postfix/virtual
